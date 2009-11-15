@@ -1,0 +1,9 @@
+tv.sh
+=====
+mplayer wrapper in Swedish ComHem (i.e. PAL) houses for use w/ the HVR-900 (or
+any other compatible card). preset list of channels in the script.
+
+
+pyodconverter
+=============
+rpc script to convert documents between any format openoffice handles.
