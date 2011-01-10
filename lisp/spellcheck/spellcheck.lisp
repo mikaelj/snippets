@@ -1,4 +1,4 @@
-;;;; Literal translation of Peter Norvig's spell corrector (http://norvig.com/spell-corrector.html)
+;;;; Literal translation of Peter Norvig's spell corrector (http://norvig.com/spell-correct.html)
 ;;;; by Mikael Jansson <mikael@lisp.se>
 ;;;;
 ;;;; 1e6 times faster than the Python version on a Quad Xeon 2,6 GHz.
@@ -16,8 +16,7 @@
   (let ((frequency (make-hash-table :test 'equal)))
     (dolist (word words)
       ;; default 1 to make unknown words OK
-      (setf (gethash word frequency) (1+ (gethash word frequency 1)))
-      )
+      (setf (gethash word frequency) (1+ (gethash word frequency 1))))
     frequency))
 
 (defvar *freq* (train (words (nstring-downcase (alexandria:read-file-into-string #P"big.txt"))))
