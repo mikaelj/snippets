@@ -19,7 +19,7 @@
       (setf (gethash word frequency) (1+ (gethash word frequency 1))))
     frequency))
 
-(defvar *freq* (train (words (nstring-downcase (alexandria:read-file-into-string #P"big.txt"))))
+(defvar *freq* (train (words (nstring-downcase (alexandria:read-file-into-string #P"big.txt")))))
 (defvar *alphabet* "abcdefghijklmnopqrstuvwxyz")
 
 ;;; edits of one character
