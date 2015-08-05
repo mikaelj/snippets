@@ -1,7 +1,8 @@
 ;;;; Literal translation of Peter Norvig's spell corrector (http://norvig.com/spell-correct.html)
 ;;;; by Mikael Jansson <mikael@lisp.se>
 ;;;;
-;;;; 1e6 times faster than the Python version on a Quad Xeon 2,6 GHz.
+;;;; At some time, for some test case, on some version of SBCL, I find this to be 1e6 times faster than the Python version on a Quad Xeon 2,6 GHz.
+;;;; I can no longer (2015) verify that claim, nor do I remember how I tested it, so the speedup is most likely invalid.
 
 (defpackage :spellcheck
   (:use :cl))
